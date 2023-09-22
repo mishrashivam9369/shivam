@@ -10,30 +10,36 @@
             display:inline-block;
         }
     .form{
-        width:55%;
         background-color:black;
         color:white;
-        border: radius 10px;
-        margin: 5px 700px 220px 120px;
+        border-radius:10px;
+        margin: 5px 800px 5px 20px;
        padding: 10px;  
+
     }
     #submit{
-        width:3cm;
-         border-radius:20cm;
+        margin: 10px 150px 10px 80px;
+        padding: 10px;
+        width:7cm;
+         border-radius:5px;
         text-align: center;
         background-color :green;
     }
     h1{
         text-align:center;
     }
-    .input{
+    input{
         text-align:left;
-       margin:2%;
-       padding:10px;   
+       margin:0px;
+         
+    }
+    #color{
+        margin:0px;
+        padding: 0px;
     }
     </style>
 </head>
-<body>
+<body><form action="backend.php">
     <div id="container" class="form">
         <h1 style="height:50px;">Registration form</h1>
         <div>
@@ -64,24 +70,23 @@
     <label for="gender" class="lableclass">my gender</label>
     <input type="radio" id="gender" class="gender" name="gender"> male:
     <input type="radio" id="gender" class="gender" name="gender">female:
-    <input type="radio" id="gender" class="gender" name="gender">other:<br><br>
+    <input type="radio" id="gender" class="gender" name="gender">other:<br>
 </div>
-<div>
+<div class="color">
     <label for="color" class="lableclass">my color</label>
     <input type="color" id="color" name="color">
-</div>
+</div><br>
      <div>
-        <label for="languag" class="lableclass">choose language</label>
-        <input type="checkbox" id="languag" name="languag" class="lableclass">html:
-        <input type="checkbox" id="languag" name="languag" class="lableclass">css:
-        <input type="checkbox" id="languag" name="languag" class="lableclass">javascript:
+        <label for="language" class="lableclass">language :-</label>
+       <input type="checkbox" id="language" name="language" > html:
+        <input type="checkbox" id="language" name="language" >css:
+        <input type="checkbox" id="language" name="language" >javascript:
      </div>
-     <div>
-        <label for="submit">submit</label>
-        <center>
-            <input type="submit"id="submit" name="submit">
-        </center>
+        <div class="submit">
+        <label for="submit" class="submit"></label>   
+            <input type="submit"id="submit" name="submit">       
      </div>
 </div>
+</form>
 </body>
 </html>
